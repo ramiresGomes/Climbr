@@ -1,0 +1,46 @@
+{
+  "name": "Square 3.0",
+  "description": "Sistema para gestão",
+  "main": "",
+  "authors": [
+    "Ramires Gomes <ramires.gb@gmail.com>",
+    "Wallef Borges <borgeswallef@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "tgoo",
+    "square",
+    "painel"
+  ],
+  "homepage": "http://square.app/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "AdminLTE": "admin-lte#^2.3.3",
+    "bootstrap-validator": "^0.10.1",
+    "jquery.maskMoney": "^3.0.2",
+    "animate.css": "^3.5.1",
+    "noty": "^2.3.8",
+    "photoswipe": "^4.1.1",
+    "eonasdan-bootstrap-datetimepicker": "bootstrap3-datetimepicker#^4.17.37",
+    "jquery-ui": "^1.11.4",
+    "jquery-tag-editor": "^1.0.18",
+    "dropzone": "^4.3.0",
+    "Swiper": "swiper#^3.3.1",
+    "slick-carousel": "slick.js#^1.6.0",
+    "jquery-simplyscroll": "^2.0.5",
+    "jquery.spinner": "^0.2.1",
+    "vue": "0.12.16",
+    "vue-resource": "^0.9.3",
+    "bootstrap-touchspin": "^3.1.2",
+    "numeral": "numeraljs#^1.5.3",
+    "jquery-mask-plugin": "jquery-mask#^1.14.0",
+    "jquery-price-format": "*"
+  }
+}

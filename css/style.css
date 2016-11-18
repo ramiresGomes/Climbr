@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+@font-face{font-family:'proxima_novalight';src:url('../fonts/proxima-light/proximanova-light-webfont.eot');src:url('../fonts/proxima-light/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima-light/proximanova-light-webfont.woff') format('woff'), url('../fonts/proxima-light/proximanova-light-webfont.ttf') format('truetype'), url('../fonts/proxima-light/proximanova-light-webfont.svg#proxima_novalight') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'proxima_nova_rgregular';src:url('../fonts/proxima-regular/proximanova-regular-webfont.eot');src:url('../fonts/proxima-regular/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima-regular/proximanova-regular-webfont.woff') format('woff'), url('../fonts/proxima-regular/proximanova-regular-webfont.ttf') format('truetype'), url('../fonts/proxima-regular/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');font-weight:normal;font-style:normal;}
+@font-face {font-family:'proxima_novasemibold';src:url('../fonts/proxima-semibold/proximanova-semibold-webfont-webfont.eot');src:url('../fonts/proxima-semibold/proximanova-semibold-webfont-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima-semibold/proximanova-semibold-webfont-webfont.woff2') format('woff2'), url('../fonts/proxima-semibold/proximanova-semibold-webfont-webfont.woff') format('woff'), url('../fonts/proxima-semibold/proximanova-semibold-webfont-webfont.ttf') format('truetype'), url('../fonts/proxima-semibold/proximanova-semibold-webfont-webfont.svg#proxima_novasemibold') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'proxima_nova_rgbold';src:url('../fonts/proxima-bold/proximanova-bold-webfont.eot');src:url('../fonts/proxima-bold/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima-bold/proximanova-bold-webfont.woff') format('woff'), url('../fonts/proxima-bold/proximanova-bold-webfont.ttf') format('truetype'), url('../fonts/proxima-bold/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');font-weight:normal;font-style:normal;}
+
+/* Reset
+= = = = = = = = = = */
+a, a:hover, a:focus, button, button:hover, button:focus{text-decoration:none;-webkit-transition:all 0.4s;-o-transition:all 0.4s;transition:all 0.4s;}
+:focus, :hover{outline:none !important;}
+h1,h2,h3, h4, h5, h6{font-weight:normal;margin:0;}
+.form-group{display:inline-block;margin-bottom:8px;position:relative;width:100%;}
+.well{background:#141823;border-color:#000;display:inline-block;padding:6px;width:100%;}
+.container{padding:0;position:relative;}
+.row{margin:0;}
+.nopaddingl{padding-left:0;}
+.nopaddingr{padding-right:0;}
+.nopadding{padding:0;}
+iframe{width:inherit !important;}
+
+.nomarginb{margin-bottom:0 !important;}
+.nomargint{margin-top:0 !important;}
+
+/* Fonts
+= = = = = = = = = = */
+.light{font-family:'proxima_novalight', serif;}
+.semibold{font-family:'proxima_novasemibold', serif;}
+.bold{font-family:'proxima_nova_rgbold', serif;}
+
+.f12{font-size:12px;}
+.f13{font-size:13px;}
+.f14{font-size:14px;}
+.f15{font-size:15px;}
+
+.blue{color:#1F3F72;}
+
+/* Geral
+= = = = = = = = = = */
+body{color:#253139;font-family:'proxima_nova_rgregular', serif;font-size:16px;margin:0;overflow-x:hidden;padding:0;}
+
+/* -- * Header * -- */
+header{background:#DEE9F3 url("../imagens/bg-header.jpg") no-repeat center top;}
+header .logo{display:inline-block;margin:15px 0 14px;}
+header .social{margin-top:10px;text-align:right;}
+header .social li{padding:0;}
+header .social li:first-child a,header .social li:first-child a:focus{background:#3B5998;}
+header .social li a,header .social li a:focus{background:#2DAAE1;border-radius:50%;color:#fff;display:inline-block;font-size:17px;height:32px;line-height:35px;text-align:center;width:32px;}
+header .social li a:hover{background:#66BDCC;}
+
+header label{cursor:pointer;display:inline-block;font-weight:normal;margin:0;position:relative;top:-12px;}
+header form{background:#dad7d3;border-radius:4px;display:inline-block;height:33px;margin-left:2px;position:relative;width:90%;}
+header input{border:none;border-radius:4px;height:29px;left:2px;padding:0 4%;position:absolute;top:2px;width:80%;}
+header button,header button:focus{background:none;border:none;color:#fff;font-size:18px;position:absolute;right:6px;top:3px;}
+header button:hover{color:#33495D;}
+
+header .minicart{background:#66BDCC;border-radius:4px;display:inline-block;min-height:29px;padding:2px;position:absolute;width:98%;}
+header .minicart > a{display:inline-block;line-height:29px;position:relative;width:100%;}
+header .minicart > a i:first-child{font-size:18px;left:0;top:1px;}
+header .minicart > a i{color:#fff;font-size:16px;left:63%;padding:0 7px;position:relative;top:-1px;}
+header .minicart span{background:#fff;border-radius:2px;color:#33465d;font-size:14px;line-height:16px;padding:7px 0 6px;position:absolute;right:0;text-align:center;top:0;width:82%;z-index:1;-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease;}
+header .minicart:hover{background:#E13E5D;}
+header .minicart:hover > a span{right:18%;}
+
+header .minicart:hover .bg{display:block;}
+header .minicart .bg:before{border: 8px solid transparent;border-bottom-color: #e13e5d;content:"";position:absolute;right:70px;top:0;}
+header .minicart .bg{display:none;padding-top:15px;position:absolute;right:0;top:27px;z-index:9999;}
+header .in-cart{background:#fff;border:1px solid #E13E5D;border-radius:4px;border-top-width:4px;padding:10px;width:356px;}
+header .in-cart ul{margin-bottom:5px;padding:0;}
+header .in-cart li{border-bottom:1px solid #DAD7D3;display:inline-block;padding-bottom:5px;width:100%;}
+header .in-cart li p:first-child{font-size:14px;margin-top:3px;}
+header .in-cart li p{font-size:12px;margin:0;}
+header .in-cart li a,header .in-cart ul li a:focus{background:#33465D;color:#fff;font-size:12px;margin:0 3px;padding:2px 4px;position:relative;top:9px;}
+header .in-cart li a:hover{background:#66BDCC;}
+header .cart i{font-size:17px;margin-right:5px;}
+
+header .main-menu{background:#1F3F72;margin-bottom:10px;}
+header .main-menu .navbar{background:none;border:none;min-height:40px;}
+header .main-menu .navbar li:first-child{padding:0;}
+header .main-menu .navbar li{padding-left:136px;}
+header .main-menu .navbar a,header .main-menu .navbar a:focus{color:#fff;display:inline-block;font-size:17px;padding:10px 0;text-transform:uppercase;}
+header .main-menu .navbar a:hover,header .main-menu .navbar .active{color:#FFC20E;text-shadow:0 1px 0 #000;}
+
+/* -- * Content Home * -- */
+.content-home aside .nav li:before{color:#1F3F72;content:"\f0da";float:left;font-family:'fontawesome', serif;position:relative;top:5px;}
+.content-home aside .nav li:hover:before{color:#FFBF0C;}
+.content-home aside .nav li a,.content-home aside .nav li a:focus{font-size:17px;color:#1F3F72;line-height:32px;padding: 0 0 0 10px;}
+.content-home aside .nav li a:hover{background:none;color:#FFBF0C;}
+.content-home .lst-products .item figure{margin-bottom:20px;overflow:hidden;text-align:center;}
+.content-home .lst-products .item figure .offer{background:url("../imagens/offer.png") no-repeat;color:#fff;font-size:13px;height:46px;position:absolute;right:0;text-align:center;top:0;width:31px;}
+.content-home .lst-products .item .btn{margin-top:10px;}
+.content-home .lst-products .item p{margin:0;line-height:16px;}
+
+/* -- * Slide * -- */
+.slider{margin-bottom:10px;}
+
+
+/* -- * Footer * -- */
+footer{background:#1F3F72;color:#fff;margin-top:50px;padding-bottom:10px;}
+footer .brands{background:#FFC20E url("../imagens/bg-brands.jpg") no-repeat top center;padding:56px 0 0;}
+footer .brands ul li:first-child{margin:0;}
+footer .brands ul li{margin-left:35px;padding:0;}
+
+footer .footer{background:#1F3F72 url("../imagens/bg-footer.jpg") no-repeat top center;padding:70px 0 30px;}
+footer .footer h1{color:#fff;font-size:34px;}
+footer .footer .menu{padding-left:0;}
+footer .footer .menu li{list-style:none;line-height:30px;font-size:17px;}
+footer .footer .menu li a,footer .footer .menu li a:focus{color:#fff;}
+footer .footer .menu li a:hover{color:#438FCD;text-shadow:0 1px 0 rgba(0,0,0,0.5);}
+
+footer .footer address ul{margin-top:20px;padding:0;}
+footer .footer address ul li{list-style:none;margin-bottom:10px;}
+footer .footer address ul li i{min-width:17px;text-align:center;}
+
+footer hr{border-top-color:#172F55;border-bottom:1px solid #438FCD;margin:10px 0 12px;}
+footer .copy{font-size:16px;}
+
+/* --- Animations */
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:0.5s;-moz-animation-duration:0.5s;-o-animation-duration:0.5s;animation-duration:0.5s;}
+.fadeIn{-webkit-animation-name:fadeIn;-moz-animation-name:fadeIn;-o-animation-name:fadeIn;animation-name:fadeIn;}@-webkit-keyframes fadeIn{0%{opacity:0;}100%{opacity:1;}}@-moz-keyframes fadeIn{0%{opacity:0;}100%{opacity:1;}}@-o-keyframes fadeIn{0%{opacity:0;}100%{opacity:1;}}@keyframes fadeIn{0%{opacity:0;}100%{opacity:1;}}
+.fadeOutUp{-webkit-animation-name:fadeOutUp;-moz-animation-name:fadeOutUp;-o-animation-name:fadeOutUp;animation-name:fadeOutUp;}@-webkit-keyframes fadeOutUp{0%{opacity:1;-webkit-transform:translateY(0);}100%{opacity:0;-webkit-transform:translateY(-20px);}}@-moz-keyframes fadeOutUp{0%{opacity:1;-moz-transform:translateY(0);}100%{opacity:0;-moz-transform:translateY(-20px);}}@-o-keyframes fadeOutUp{0%{opacity:1;-o-transform:translateY(0);}100%{opacity:0;-o-transform:translateY(-20px);}}@keyframes fadeOutUp{0%{opacity:1;transform:translateY(0);}100%{opacity:0;transform:translateY(-20px);}}
+.bounceInDown{-webkit-animation-name:bounceInDown;-moz-animation-name:bounceInDown;-o-animation-name:bounceInDown;animation-name:bounceInDown;}@-webkit-keyframes bounceInDown{0%{opacity:0;-webkit-transform:translateY(-2000px);}60%{opacity:1;-webkit-transform:translateY(30px);}80%{-webkit-transform:translateY(-10px);}100%{-webkit-transform:translateY(0);}}@-moz-keyframes bounceInDown{0%{opacity:0;-moz-transform:translateY(-2000px);}60%{opacity:1;-moz-transform:translateY(30px);}80%{-moz-transform:translateY(-10px);}100%{-moz-transform:translateY(0);}}@-o-keyframes bounceInDown{0%{opacity:0;-o-transform:translateY(-2000px);}60%{opacity:1;-o-transform:translateY(30px);}80%{-o-transform:translateY(-10px);}100%{-o-transform:translateY(0);}}@keyframes bounceInDown{0%{opacity:0;transform:translateY(-2000px);}60%{opacity:1;transform:translateY(30px);}80%{transform:translateY(-10px);}100%{transform:translateY(0);}}
+.bounceOutUp{-webkit-animation-name:bounceOutUp;-moz-animation-name:bounceOutUp;-o-animation-name:bounceOutUp;animation-name:bounceOutUp;}@-moz-keyframes bounceOutUp{0%{-moz-transform:translateY(0);}20%{opacity:1;-moz-transform:translateY(20px);}100%{opacity:0;-moz-transform:translateY(-2000px);}}@-o-keyframes bounceOutUp{0%{-o-transform:translateY(0);}20%{opacity:1;-o-transform:translateY(20px);}100%{opacity:0;-o-transform:translateY(-2000px);}}@keyframes bounceOutUp{0%{transform:translateY(0);}20%{opacity:1;transform:translateY(20px);}100%{opacity:0;transform:translateY(-2000px);}}
+
+/* Nivo Lightbox v1.1 | http://dev7studios.com/nivo-lightbox | Copyright 2013, Dev7studios | Free to use and abuse under the MIT license. | http://www.opensource.org/licenses/mit-license.php */
+.nivo-lightbox-overlay{position:fixed;top:0;left:0;z-index:99998;width:100%;height:100%;overflow:hidden;visibility:hidden;opacity:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.nivo-lightbox-overlay.nivo-lightbox-open{visibility:visible;opacity:1;}
+.nivo-lightbox-wrap{position:absolute;top:10%;bottom:10%;left:10%;right:10%;}
+.nivo-lightbox-content{width:100%;height:100%;}
+.nivo-lightbox-title-wrap{position:absolute;bottom:0;left:0;width:100%;z-index:99999;text-align:center;}
+.nivo-lightbox-nav{ display:none;}
+.nivo-lightbox-prev{position:absolute;top:50%;left:0;}
+.nivo-lightbox-next{position:absolute;top:50%;right:0;}
+.nivo-lightbox-close{position:absolute;top:2%;right:2%;}
+.nivo-lightbox-image{ text-align:center;}
+.nivo-lightbox-image img{max-width:100%;max-height:100%;width:auto;height:auto;vertical-align:middle;}
+.nivo-lightbox-content iframe{width:100%;height:100%;}
+.nivo-lightbox-inline, .nivo-lightbox-ajax{max-height:100%;overflow:auto;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;/* https://bugzilla.mozilla.org/show_bug.cgi?id=308801 */ }
+.nivo-lightbox-error{display:table;text-align:center;width:100%;height:100%;color:#fff;text-shadow:0 1px 1px #000;}
+.nivo-lightbox-error p{display:table-cell;vertical-align:middle;}
+
+/* Effects ********************** */
+.nivo-lightbox-notouch .nivo-lightbox-effect-fade, .nivo-lightbox-notouch .nivo-lightbox-effect-fadeScale, .nivo-lightbox-notouch .nivo-lightbox-effect-slideLeft, .nivo-lightbox-notouch .nivo-lightbox-effect-slideRight, .nivo-lightbox-notouch .nivo-lightbox-effect-slideUp, .nivo-lightbox-notouch .nivo-lightbox-effect-slideDown, .nivo-lightbox-notouch .nivo-lightbox-effect-fall{-webkit-transition:all 0.2s ease-in-out;-moz-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;}
+
+/* fadeScale ******************* */
+.nivo-lightbox-effect-fadeScale .nivo-lightbox-wrap{-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s;-webkit-transform:scale(0.7);-moz-transform:scale(0.7);transform:scale(0.7);}
+.nivo-lightbox-effect-fadeScale.nivo-lightbox-open .nivo-lightbox-wrap{-webkit-transform:scale(1);-moz-transform:scale(1);transform:scale(1);}
+
+/* slideLeft / slideRight / slideUp / slideDown */
+.nivo-lightbox-effect-slideLeft .nivo-lightbox-wrap, .nivo-lightbox-effect-slideRight .nivo-lightbox-wrap, .nivo-lightbox-effect-slideUp .nivo-lightbox-wrap, .nivo-lightbox-effect-slideDown .nivo-lightbox-wrap{-webkit-transition:all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);-moz-transition:all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);-o-transition:all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);transition:all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);}
+.nivo-lightbox-effect-slideLeft .nivo-lightbox-wrap{-webkit-transform:translateX(-10%);-moz-transform:translateX(-10%);transform:translateX(-10%);}
+.nivo-lightbox-effect-slideRight .nivo-lightbox-wrap{-webkit-transform:translateX(10%);-moz-transform:translateX(10%);transform:translateX(10%);}
+.nivo-lightbox-effect-slideLeft.nivo-lightbox-open .nivo-lightbox-wrap, .nivo-lightbox-effect-slideRight.nivo-lightbox-open .nivo-lightbox-wrap{-webkit-transform:translateX(0);-moz-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0);}
+.nivo-lightbox-effect-slideDown .nivo-lightbox-wrap{-webkit-transform:translateY(-10%);-moz-transform:translateY(-10%);-ms-transform:translateY(-10%);transform:translateY(-10%);}
+.nivo-lightbox-effect-slideUp .nivo-lightbox-wrap{-webkit-transform:translateY(10%);-moz-transform:translateY(10%);-ms-transform:translateY(10%);transform:translateY(10%);}
+.nivo-lightbox-effect-slideUp.nivo-lightbox-open .nivo-lightbox-wrap, .nivo-lightbox-effect-slideDown.nivo-lightbox-open .nivo-lightbox-wrap{-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);}
+
+/* fall ********************** */
+.nivo-lightbox-body-effect-fall .nivo-lightbox-effect-fall{-webkit-perspective:1000px;-moz-perspective:1000px;perspective:1000px;}
+.nivo-lightbox-effect-fall .nivo-lightbox-wrap{-webkit-transition:all 0.3s ease-out;-moz-transition:all 0.3s ease-out;-o-transition:all 0.3s ease-out;transition:all 0.3s ease-out;-webkit-transform:translateZ(300px);-moz-transform:translateZ(300px);-ms-transform:translateZ(300px);transform:translateZ(300px);}
+.nivo-lightbox-effect-fall.nivo-lightbox-open .nivo-lightbox-wrap{-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);}
+
+/* Nivo Lightbox Default Theme v1.0 | http://dev7studios.com/nivo-lightbox | Copyright 2013, Dev7studios | Free to use and abuse under the MIT license. | http://www.opensource.org/licenses/mit-license.php */
+.nivo-lightbox-theme-default.nivo-lightbox-overlay{background:#666;background:rgba(0,0,0,0.6);}
+.nivo-lightbox-theme-default .nivo-lightbox-content.nivo-lightbox-loading{ background:url("nivo-lightbox/loading.gif") no-repeat 50% 50%;}
+.nivo-lightbox-theme-default .nivo-lightbox-nav{top:10%;width:8%;height:80%;text-indent:-9999px;background: no-repeat 50% 50%;opacity:0.5;}
+.nivo-lightbox-theme-default .nivo-lightbox-nav:hover{opacity:1;background-color:rgba(0,0,0,0.5);}
+.nivo-lightbox-theme-default .nivo-lightbox-prev{background-image:url("nivo-lightbox/prev.png");border-radius:0 3px 3px 0;}
+.nivo-lightbox-theme-default .nivo-lightbox-next{background-image:url("nivo-lightbox/next.png");border-radius:3px 0 0 3px;}
+.nivo-lightbox-theme-default .nivo-lightbox-close{display:block;background:url("nivo-lightbox/close.png") no-repeat 0 0;width:16px;height:16px;text-indent:-9999px;padding:5px;opacity:0.5;}
+.nivo-lightbox-theme-default .nivo-lightbox-close:hover{ opacity:1;}
+.nivo-lightbox-theme-default .nivo-lightbox-title-wrap{ bottom:-7%;}
+.nivo-lightbox-theme-default .nivo-lightbox-title{font-style:normal;font-weight:normal;background:#000;color:#fff;padding:7px 15px;border-radius:30px;}
+.nivo-lightbox-theme-default .nivo-lightbox-image img{background:#fff;-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.4);-moz-box-shadow:0 1px 1px rgba(0,0,0,0.4);box-shadow:0 1px 1px rgba(0,0,0,0.4);}
+.nivo-lightbox-theme-default .nivo-lightbox-ajax, .nivo-lightbox-theme-default .nivo-lightbox-inline{background:#fff;padding:40px;-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.4);-moz-box-shadow:0 1px 1px rgba(0,0,0,0.4);box-shadow:0 1px 1px rgba(0,0,0,0.4);}
+@media (-webkit-min-device-pixel-ratio:1.3), (-o-min-device-pixel-ratio:2.6/2), (min--moz-device-pixel-ratio:1.3), (min-device-pixel-ratio:1.3), (min-resolution:1.3dppx){
+    .nivo-lightbox-theme-default .nivo-lightbox-content.nivo-lightbox-loading{background-image:url("nivo-lightbox/loading@2x.gif");background-size:32px 32px;}
+    .nivo-lightbox-theme-default .nivo-lightbox-prev{background-image:url("nivo-lightbox/prev@2x.png");background-size:48px 48px;}
+    .nivo-lightbox-theme-default .nivo-lightbox-next{background-image:url("nivo-lightbox/next@2x.png");background-size:48px 48px;}
+    .nivo-lightbox-theme-default .nivo-lightbox-close{background-image:url("nivo-lightbox/close@2x.png");background-size:16px 16px;}
+}
